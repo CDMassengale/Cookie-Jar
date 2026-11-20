@@ -11,7 +11,7 @@ class Jar:
         return f"{'🍪' * self.size}"
 
     def deposit(self, n):
-        if + self.size <= self._capacity:
+        if self.size + n <= self._capacity:
             self._size += n
         else:
             raise ValueError
